@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дашборд личной продуктивности</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Дашборд личной продуктивности</h1>
+      <p>Добавляйте виджеты, управляйте ими и следите за задачами</p>
+    </div>
+
+    <nav class="toolbar" aria-label="Управление виджетами">
+      <button type="button" data-add="todo">+ Задачи</button>
+      <button type="button" data-add="quote">+ Цитата</button>
+      <button type="button" data-add="weather">+ Погода</button>
+      <button type="button" data-add="currency">+ Курсы валют</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard" class="dashboard" aria-live="polite" aria-label="Активные виджеты"></section>
+    <p id="empty-state" class="empty-state">Пока нет виджетов. Добавьте первый виджет сверху.</p>
+  </main>
+</body>
+</html>
